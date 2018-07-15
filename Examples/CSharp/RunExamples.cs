@@ -21,7 +21,7 @@ namespace CSharp
             // Getting Started
             // =====================================================
             // =====================================================
-             LoadLicenseFromFile.Run();
+            // LoadLicenseFromFile.Run();
             // LoadLicenseFromStreamObject.Run();
             // SetLicenseUsingEmbeddedResource.Run();
             // SecureLicense.Run();
