@@ -58,6 +58,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -71,8 +72,20 @@
     <Compile Include="GettingStarted\SetLicenseUsingEmbeddedResource.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RunExamples.cs" />
+    <Compile Include="WorkingWithGradient\AddTopLinearGradient.cs" />
+    <Compile Include="WorkingWithGradient\AddVerticalGradient.cs" />
+    <Compile Include="WorkingWithImages\AddImage.cs" />
+    <Compile Include="WorkingWithImages\AddTiledImage.cs" />
+    <Compile Include="WorkingWithPages\AddRemovePage.cs" />
+    <Compile Include="WorkingWithShapes\AddEllipse.cs" />
+    <Compile Include="WorkingWithShapes\AddRectangle.cs" />
+    <Compile Include="WorkingWithText\AddText.cs" />
+    <Compile Include="WorkingWithText\AddTextUsingUnicodeString.cs" />
+    <Compile Include="WorkingWithTransparency\AddTransparentObject.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="WorkingWithGrid\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>

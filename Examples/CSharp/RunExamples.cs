@@ -4,6 +4,12 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using CSharp.GettingStarted;
+using CSharp.WorkingWithGradient;
+using CSharp.WorkingWithImages;
+using CSharp.WorkingWithShapes;
+using CSharp.WorkingWithText;
+using CSharp.WorkingWithPages;
+using CSharp.WorkingWithTransparency;
 
 namespace CSharp
 {
@@ -28,10 +34,49 @@ namespace CSharp
 
             // =====================================================
             // =====================================================
-            // WorkingWithDocuments
+            // WorkingWithText
             // =====================================================
             // =====================================================
+            // AddText.Run();
+            // AddTextUsingUnicodeString.Run();
 
+            // =====================================================
+            // =====================================================
+            // WorkingWithImages
+            // =====================================================
+            // =====================================================
+            // AddImage.Run();
+            // AddTiledImage.Run();
+
+            // =====================================================
+            // =====================================================
+            // WorkingWithGradient
+            // =====================================================
+            // =====================================================
+            // AddTopLinearGradient.Run();
+            // AddVerticalGradient.Run();
+
+            // =====================================================
+            // =====================================================
+            // WorkingWithShapes
+            // =====================================================
+            // =====================================================
+            // AddRectangle.Run();
+            // AddEllipse.Run();
+
+            // =====================================================
+            // =====================================================
+            // WorkingWithPages
+            // =====================================================
+            // =====================================================
+            // AddRemovePage.Run();
+
+            // =====================================================
+            // =====================================================
+            // WorkingWithTransparency
+            // =====================================================
+            // =====================================================
+            AddTransparentObject.Run();
 
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");
@@ -41,6 +86,41 @@ namespace CSharp
         public static String GetDataDir_GettingStarted()
         {
             return Path.GetFullPath(GetDataDir_Data() + "GettingStarted/");
+        }
+
+        public static String GetDataDir_WorkingWithGradient()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithGradient/");
+        }
+
+        public static String GetDataDir_WorkingWithGrid()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithGrid/");
+        }
+
+        public static String GetDataDir_WorkingWithImages()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithImages/");
+        }
+
+        public static String GetDataDir_WorkingWithShapes()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithShapes/");
+        }
+
+        public static String GetDataDir_WorkingWithText()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithText/");
+        }
+
+        public static String GetDataDir_WorkingWithPages()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithPages/");
+        }
+
+        public static String GetDataDir_WorkingWithTransparency()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithTransparency/");
         }
 
         public static string GetDataDir_Data()
