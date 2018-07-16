@@ -10,6 +10,7 @@ using CSharp.WorkingWithShapes;
 using CSharp.WorkingWithText;
 using CSharp.WorkingWithPages;
 using CSharp.WorkingWithTransparency;
+using CSharp.WorkingWithGrid;
 
 namespace CSharp
 {
@@ -55,6 +56,7 @@ namespace CSharp
             // =====================================================
             // AddTopLinearGradient.Run();
             // AddVerticalGradient.Run();
+            //AddHorizontalGradient.Run();
 
             // =====================================================
             // =====================================================
@@ -76,7 +78,14 @@ namespace CSharp
             // WorkingWithTransparency
             // =====================================================
             // =====================================================
-            AddTransparentObject.Run();
+            //AddTransparentObject.Run();
+
+            // =====================================================
+            // =====================================================
+            // WorkingWithGrid
+            // =====================================================
+            // =====================================================
+            //AddGrid.Run();
 
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");
