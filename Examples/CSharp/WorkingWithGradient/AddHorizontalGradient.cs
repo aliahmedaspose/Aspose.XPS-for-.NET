@@ -30,7 +30,6 @@ namespace CSharp.WorkingWithGradient
             path.RenderTransform = doc.CreateMatrix(1f, 0f, 0f, 1f, 20f, 70f);
             path.Fill = doc.CreateLinearGradientBrush(new PointF(10f, 0f), new PointF(228f, 0f));
             ((XpsGradientBrush)path.Fill).GradientStops.AddRange(stops);
-            stops.Clear();
             // Save resultant XPS document
             doc.Save(dataDir + "AddHorizontalGradient_out.xps");
             // ExEnd:1

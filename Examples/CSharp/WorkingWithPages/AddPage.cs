@@ -7,7 +7,7 @@ using System.Text;
 
 namespace CSharp.WorkingWithPages
 {
-    public class AddRemovePage
+    public class AddPage
     {
         public static void Run()
         {
@@ -17,18 +17,11 @@ namespace CSharp.WorkingWithPages
             // Create new XPS Document
             XpsDocument doc = new XpsDocument(dataDir + "Sample1.xps");
 
-            // Get 5th path
-            XpsPath path = (XpsPath)doc.Page[5];
-            // Remove 5th canvas
-            doc.RemoveAt(5);
-
-            // Insert an empty page before the first one
+            // Insert an empty page at beginning of pages list
             doc.InsertPage(1, true);
-            // Add saved path to the new page
-            doc.Add(path);
             
             // Save resultant XPS document
-            doc.Save(dataDir + "WorkingWithPages_out.xps");
+            doc.Save(dataDir + "AddPages_out.xps");
             // ExEnd:1
         }
     }

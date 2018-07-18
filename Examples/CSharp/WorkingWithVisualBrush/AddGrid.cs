@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 
-namespace CSharp.WorkingWithGrid
+namespace CSharp.WorkingWithVisualBrush
 {
     public class AddGrid
     {
@@ -14,7 +14,7 @@ namespace CSharp.WorkingWithGrid
         {
             // ExStart:1
             // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir_WorkingWithGrid();
+            string dataDir = RunExamples.GetDataDir_WorkingWithVisualBrush();
 
             XpsDocument doc = new XpsDocument();
             // Geometry for magenta grid VisualBrush
@@ -31,6 +31,7 @@ namespace CSharp.WorkingWithGrid
             visualPath.Fill = doc.CreateSolidColorBrush(doc.CreateColor(1f, .61f, 0.1f, 0.61f));
 
             XpsPath gridPath = doc.CreatePath(pathGeometry);
+            //Create Visual Brush, it is specified by some XPS fragment (vector graphics and glyphs)
             gridPath.Fill = doc.CreateVisualBrush(visualCanvas,
                 new RectangleF(0f, 0f, 10f, 10f), new RectangleF(0f, 0f, 10f, 10f));
             ((XpsVisualBrush)gridPath.Fill).TileMode = XpsTileMode.Tile;

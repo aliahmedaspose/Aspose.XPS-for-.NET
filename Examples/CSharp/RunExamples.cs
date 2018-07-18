@@ -10,7 +10,7 @@ using CSharp.WorkingWithShapes;
 using CSharp.WorkingWithText;
 using CSharp.WorkingWithPages;
 using CSharp.WorkingWithTransparency;
-using CSharp.WorkingWithGrid;
+using CSharp.WorkingWithVisualBrush;
 
 namespace CSharp
 {
@@ -54,9 +54,9 @@ namespace CSharp
             // WorkingWithGradient
             // =====================================================
             // =====================================================
-            // AddTopLinearGradient.Run();
+            // AddLinearGradient.Run();
             // AddVerticalGradient.Run();
-            //AddHorizontalGradient.Run();
+            // AddHorizontalGradient.Run();
 
             // =====================================================
             // =====================================================
@@ -71,7 +71,7 @@ namespace CSharp
             // WorkingWithPages
             // =====================================================
             // =====================================================
-            // AddRemovePage.Run();
+            //AddPage.Run();
 
             // =====================================================
             // =====================================================
@@ -79,6 +79,7 @@ namespace CSharp
             // =====================================================
             // =====================================================
             //AddTransparentObject.Run();
+            //SetOpacityMask.Run();
 
             // =====================================================
             // =====================================================
@@ -102,9 +103,9 @@ namespace CSharp
             return Path.GetFullPath(GetDataDir_Data() + "WorkingWithGradient/");
         }
 
-        public static String GetDataDir_WorkingWithGrid()
+        public static String GetDataDir_WorkingWithVisualBrush()
         {
-            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithGrid/");
+            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithVisualBrush/");
         }
 
         public static String GetDataDir_WorkingWithImages()
