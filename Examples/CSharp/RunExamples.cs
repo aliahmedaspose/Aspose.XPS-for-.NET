@@ -10,6 +10,7 @@ using CSharp.WorkingWithShapes;
 using CSharp.WorkingWithText;
 using CSharp.WorkingWithPages;
 using CSharp.WorkingWithTransparency;
+using CSharp.WorkingWithVisualBrush;
 
 namespace CSharp
 {
@@ -53,8 +54,9 @@ namespace CSharp
             // WorkingWithGradient
             // =====================================================
             // =====================================================
-            // AddTopLinearGradient.Run();
+            // AddLinearGradient.Run();
             // AddVerticalGradient.Run();
+            // AddHorizontalGradient.Run();
 
             // =====================================================
             // =====================================================
@@ -69,14 +71,22 @@ namespace CSharp
             // WorkingWithPages
             // =====================================================
             // =====================================================
-            // AddRemovePage.Run();
+            //AddPage.Run();
 
             // =====================================================
             // =====================================================
             // WorkingWithTransparency
             // =====================================================
             // =====================================================
-            AddTransparentObject.Run();
+            //AddTransparentObject.Run();
+            //SetOpacityMask.Run();
+
+            // =====================================================
+            // =====================================================
+            // WorkingWithGrid
+            // =====================================================
+            // =====================================================
+            //AddGrid.Run();
 
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");
@@ -93,9 +103,9 @@ namespace CSharp
             return Path.GetFullPath(GetDataDir_Data() + "WorkingWithGradient/");
         }
 
-        public static String GetDataDir_WorkingWithGrid()
+        public static String GetDataDir_WorkingWithVisualBrush()
         {
-            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithGrid/");
+            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithVisualBrush/");
         }
 
         public static String GetDataDir_WorkingWithImages()

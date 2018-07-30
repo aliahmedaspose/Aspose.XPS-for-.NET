@@ -8,7 +8,7 @@ using System.Text;
 
 namespace CSharp.WorkingWithGradient
 {
-    public class AddTopLinearGradient
+    public class AddLinearGradient
     {
         public static void Run()
         {
@@ -33,9 +33,8 @@ namespace CSharp.WorkingWithGradient
             path.RenderTransform = doc.CreateMatrix(1f, 0f, 0f, 1f, 20f, 70f);
             path.Fill = doc.CreateLinearGradientBrush(new PointF(10f, 10f), new PointF(228f, 100f));
             ((XpsGradientBrush)path.Fill).GradientStops.AddRange(stops);
-            stops.Clear();
             // Save resultant XPS document
-            doc.Save(dataDir + "AddTopLinearGradient_out.xps");
+            doc.Save(dataDir + "AddLinearGradient_out.xps");
             // ExEnd:1
         }
     }

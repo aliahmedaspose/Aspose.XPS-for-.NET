@@ -17,8 +17,9 @@ namespace CSharp.WorkingWithText
             string dataDir = RunExamples.GetDataDir_WorkingWithText();
             // Create new XPS Document
             XpsDocument doc = new XpsDocument();
-            // Add Text
+            //Create a brush 
             XpsSolidColorBrush textFill = doc.CreateSolidColorBrush(Color.Black);
+            //Add glyph to the document
             XpsGlyphs glyphs = doc.AddGlyphs("Arial", 12, FontStyle.Regular, 300f, 450f, "Hello World!");
             glyphs.Fill = textFill;
             // Save resultant XPS document

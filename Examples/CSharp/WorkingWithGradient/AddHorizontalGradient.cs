@@ -8,7 +8,7 @@ using System.Text;
 
 namespace CSharp.WorkingWithGradient
 {
-    public class AddVerticalGradient
+    public class AddHorizontalGradient
     {
         public static void Run()
         {
@@ -19,18 +19,19 @@ namespace CSharp.WorkingWithGradient
             XpsDocument doc = new XpsDocument();
             // Initialize List of XpsGradentStop
             List<XpsGradientStop> stops = new List<XpsGradientStop>();
-            stops.Add(doc.CreateGradientStop(doc.CreateColor(253, 255, 12, 0), 0f));
-            stops.Add(doc.CreateGradientStop(doc.CreateColor(252, 255, 154, 0), 0.359375f));
-            stops.Add(doc.CreateGradientStop(doc.CreateColor(252, 255, 56, 0), 0.424805f));
-            stops.Add(doc.CreateGradientStop(doc.CreateColor(253, 255, 229, 0), 0.879883f));
-            stops.Add(doc.CreateGradientStop(doc.CreateColor(252, 255, 255, 234), 1f));
+            stops.Add(doc.CreateGradientStop(doc.CreateColor(255, 244, 253, 225), 0.0673828f));
+            stops.Add(doc.CreateGradientStop(doc.CreateColor(255, 251, 240, 23), 0.314453f));
+            stops.Add(doc.CreateGradientStop(doc.CreateColor(255, 252, 209, 0), 0.482422f));
+            stops.Add(doc.CreateGradientStop(doc.CreateColor(255, 241, 254, 161), 0.634766f));
+            stops.Add(doc.CreateGradientStop(doc.CreateColor(255, 53, 253, 255), 0.915039f));
+            stops.Add(doc.CreateGradientStop(doc.CreateColor(255, 12, 91, 248), 1f));
             // Create new path by defining geometery in abbreviation form
-            XpsPath path = doc.AddPath(doc.CreatePathGeometry("M 10,110 L 228,110 228,200 10,200"));
+            XpsPath path = doc.AddPath(doc.CreatePathGeometry("M 10,210 L 228,210 228,300 10,300"));
             path.RenderTransform = doc.CreateMatrix(1f, 0f, 0f, 1f, 20f, 70f);
-            path.Fill = doc.CreateLinearGradientBrush(new PointF(10f, 110f), new PointF(10f, 200f));
+            path.Fill = doc.CreateLinearGradientBrush(new PointF(10f, 0f), new PointF(228f, 0f));
             ((XpsGradientBrush)path.Fill).GradientStops.AddRange(stops);
             // Save resultant XPS document
-            doc.Save(dataDir + "AddVerticalGradient_out.xps");
+            doc.Save(dataDir + "AddHorizontalGradient_out.xps");
             // ExEnd:1
         }
     }
