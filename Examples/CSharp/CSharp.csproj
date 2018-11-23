@@ -49,12 +49,11 @@
     <StartupObject>CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Xps, Version=18.7.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\Aspose.Xps.dll</HintPath>
+    <Reference Include="Aspose.Xps, Version=18.11.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.XPS.18.11.0\lib\net40\Aspose.Xps.dll</HintPath>
     </Reference>
-    <Reference Include="DotNetZip, Version=1.11.0.0, Culture=neutral, PublicKeyToken=6583c7c814667745, processorArchitecture=MSIL">
-      <HintPath>..\packages\DotNetZip.1.11.0\lib\net20\DotNetZip.dll</HintPath>
+    <Reference Include="DotNetZip, Version=1.12.0.0, Culture=neutral, PublicKeyToken=6583c7c814667745, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetZip.1.12.0\lib\net20\DotNetZip.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -72,22 +71,22 @@
     <Compile Include="GettingStarted\SetLicenseUsingEmbeddedResource.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RunExamples.cs" />
-    <Compile Include="WorkingWithGradient\AddTopLinearGradient.cs" />
+    <Compile Include="WorkingWithGradient\AddHorizontalGradient.cs" />
+    <Compile Include="WorkingWithGradient\AddLinearGradient.cs" />
     <Compile Include="WorkingWithGradient\AddVerticalGradient.cs" />
     <Compile Include="WorkingWithImages\AddImage.cs" />
     <Compile Include="WorkingWithImages\AddTiledImage.cs" />
-    <Compile Include="WorkingWithPages\AddRemovePage.cs" />
+    <Compile Include="WorkingWithPages\AddPage.cs" />
     <Compile Include="WorkingWithShapes\AddEllipse.cs" />
     <Compile Include="WorkingWithShapes\AddRectangle.cs" />
     <Compile Include="WorkingWithText\AddText.cs" />
     <Compile Include="WorkingWithText\AddTextUsingUnicodeString.cs" />
     <Compile Include="WorkingWithTransparency\AddTransparentObject.cs" />
+    <Compile Include="WorkingWithTransparency\SetOpacityMask.cs" />
+    <Compile Include="WorkingWithVisualBrush\AddGrid.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="WorkingWithGrid\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
@@ -95,6 +94,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
