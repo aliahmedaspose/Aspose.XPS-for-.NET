@@ -11,6 +11,7 @@ using CSharp.WorkingWithText;
 using CSharp.WorkingWithPages;
 using CSharp.WorkingWithTransparency;
 using CSharp.WorkingWithVisualBrush;
+using CSharp.WorkingWithDocumentConversion;
 
 namespace CSharp
 {
@@ -88,6 +89,16 @@ namespace CSharp
             // =====================================================
             //AddGrid.Run();
 
+            // =====================================================
+            // =====================================================
+            // WorkingWithDocumentConversion
+            // =====================================================
+            // =====================================================
+            //XPStoPNG.Run();
+            //XPStoBMP.Run();
+            //XPStoJPEG.Run();
+            //XPStoTIFF.Run();
+
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");
             Console.ReadKey();
@@ -131,6 +142,11 @@ namespace CSharp
         public static String GetDataDir_WorkingWithTransparency()
         {
             return Path.GetFullPath(GetDataDir_Data() + "WorkingWithTransparency/");
+        }
+
+        public static String GetDataDir_WorkingWithDocumentConversion()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithDocumentConversion/");
         }
 
         public static string GetDataDir_Data()
