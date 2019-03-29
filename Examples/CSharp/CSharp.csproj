@@ -49,8 +49,8 @@
     <StartupObject>CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Xps, Version=19.1.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.XPS.19.1.0\lib\net40\Aspose.Xps.dll</HintPath>
+    <Reference Include="Aspose.Xps, Version=19.3.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.XPS.19.3.0\lib\net40\Aspose.Xps.dll</HintPath>
     </Reference>
     <Reference Include="DotNetZip, Version=1.13.0.0, Culture=neutral, PublicKeyToken=6583c7c814667745, processorArchitecture=MSIL">
       <HintPath>..\packages\DotNetZip.1.13.0\lib\net40\DotNetZip.dll</HintPath>
@@ -74,6 +74,7 @@
     <Compile Include="WorkingWithDocumentConversion\XPStoPDF.cs" />
     <Compile Include="WorkingWithDocumentConversion\XPStoBMP.cs" />
     <Compile Include="WorkingWithDocumentConversion\XPStoJPEG.cs" />
+    <Compile Include="WorkingWithDocumentConversion\XPStoPDFStream.cs" />
     <Compile Include="WorkingWithDocumentConversion\XPStoPNG.cs" />
     <Compile Include="WorkingWithDocumentConversion\XPStoTIFF.cs" />
     <Compile Include="WorkingWithGradient\AddHorizontalGradient.cs" />

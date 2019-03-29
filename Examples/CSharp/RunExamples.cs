@@ -99,6 +99,7 @@ namespace CSharp
             //XPStoJPEG.Run();
             //XPStoTIFF.Run();
             //XPStoPDF.Run();
+            //XPStoPDFStream.Run();
 
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");
